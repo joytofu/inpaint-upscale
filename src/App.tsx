@@ -63,7 +63,7 @@ function App() {
         <div className="text-4xl font-bold text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out">
           Inpaint-web
         </div>
-        <div className="hidden md:flex justify-end w-[300px] mx-1 sm:mx-5">
+        {/* <div className="hidden md:flex justify-end w-[300px] mx-1 sm:mx-5">
           <Button
             className="mr-5 flex"
             onClick={() => {
@@ -85,7 +85,7 @@ function App() {
           >
             <p>{m.feedback()}</p>
           </Button>
-        </div>
+        </div> */}
       </header>
 
       <main
