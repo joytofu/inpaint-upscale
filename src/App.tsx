@@ -19,9 +19,10 @@ import {
 
 function App() {
   const [file, setFile] = useState<File>()
-  const [stateLanguageTag, setStateLanguageTag] = useState<'en' | 'zh'>('zh')
+  const [stateLanguageTag, setStateLanguageTag] = useState<'en' | 'en'>('en')
 
-  onSetLanguageTag(() => setStateLanguageTag(languageTag()))
+  // onSetLanguageTag(() => setStateLanguageTag(languageTag()))
+  onSetLanguageTag(() => setStateLanguageTag('en'))
 
   const [showAbout, setShowAbout] = useState(false)
   const modalRef = useRef(null)
@@ -60,8 +61,13 @@ function App() {
             </span>
           </div>
         </Button>
-        <div className="text-4xl font-bold text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out">
-          Inpaint-web
+        <div
+          style={{
+            paddingRight: '26%',
+          }}
+          className="text-4xl font-bold text-blue-600 hover:text-blue-700 transition duration-300 ease-in-out"
+        >
+          Free Watermark Eraser & Image Upscaler Powered By AI
         </div>
         {/* <div className="hidden md:flex justify-end w-[300px] mx-1 sm:mx-5">
           <Button
