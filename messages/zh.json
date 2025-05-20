@@ -1,7 +1,7 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"drop_zone": "Click or drag here",
-	"try_it_images": "Try it:",
+	"try_it_images": "Give it a try:",
 	"feedback": "About me",
 	"start_new": "Start new",
 	"bruch_size": "Brush Size",
